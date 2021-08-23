@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color-light: rgb(8, 140, 167);
+}
+
+* {
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(imagem/background.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1{
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    letter-spacing: 5px;
+    color: #FFF;
+    font-size: 30px;
+}
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  min-width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.relogio{
+    font-size: 50px;
+    margin: 20px 0px;
+    color: #FFF;
+    padding: 20px;
+}
+
+.verde{
+  color: #009900;
+}
+
+.vermelho{
+  color: #950000
+}
+.botoes{
+    display: flex;
+}
+.button{
+    cursor: pointer;
+    color: #FFF;
+    height: 50px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.iniciar{
+    background-color: #009900;
+}
+.button.pausar{
+    background-color: #950000;
+}
+
+.button:hover{
+  transform: scale(1.1);
+}
+
+.zerar{
+  background-color: #000;
+  margin-right: 0px;
+}
+
+.contadorQuadrado{
+  background-color: #00FF00;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
